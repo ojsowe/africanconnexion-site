@@ -31,6 +31,47 @@ a{color:inherit}
 .ac-ln>span{display:inline-block;animation:acRise 1s cubic-bezier(.2,.7,.1,1) both}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
+<style>
+html{-webkit-text-size-adjust:100%}img{max-width:100%}
+details.ac-mnav summary::-webkit-details-marker{display:none}
+@media (max-width:760px){
+  .ac-dnav{display:none!important}
+  details.ac-mnav{display:block!important}
+  header>div{flex-wrap:nowrap!important;padding-top:18px!important;padding-bottom:18px!important}
+  section>div[style*="clamp(96px"]{padding-top:72px!important;padding-bottom:72px!important}
+  section>div[style*="gap: 56px"],section>div[style*="gap: 72px"]{gap:36px!important}
+  #top{min-height:auto!important}
+  #top>div[style*="flex: 1"]{padding-top:8px!important;padding-bottom:48px!important;gap:28px!important}
+  #top h1{font-size:clamp(48px,14vw,64px)!important;letter-spacing:0!important}
+  #top p.ac-fade{margin-top:12px!important;font-size:12px!important}
+  #top .ac-btn{flex:1 1 auto;text-align:center}
+  h2[style*="clamp(48px, 6.4vw, 108px)"],h2[style*="clamp(44px, 5.2vw, 88px)"]{font-size:clamp(40px,11vw,52px)!important}
+  h2[style*="clamp(56px, 8vw, 136px)"]{font-size:clamp(44px,12vw,58px)!important}
+  #what div[style*="justify-content: space-between"][style*="border-top: 3px"]{flex-direction:column;align-items:flex-start!important;gap:4px!important}
+  #what div[style*="border-top: 3px"] span[style*="text-align: right"]{text-align:left!important}
+  #what span[style*="clamp(40px, 4.6vw, 76px)"]{font-size:38px!important}
+  #worlds div[style*="minmax(300px"],#roster div[style*="minmax(250px"]{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;margin:0 -20px;padding:0 20px 12px;gap:12px!important;scrollbar-width:none}
+  #worlds div[style*="minmax(300px"]::-webkit-scrollbar,#roster div[style*="minmax(250px"]::-webkit-scrollbar{display:none}
+  #worlds div[style*="minmax(300px"]>article{flex:0 0 82%;scroll-snap-align:start}
+  #worlds article div[style*="height: 460px"]{height:320px!important}
+  #roster div[style*="minmax(250px"]>article{flex:0 0 72%;scroll-snap-align:start}
+  #roster article div[style*="height: 240px"]{height:180px!important}
+  #roster span[style*="font-size: 11px"]{font-size:12px!important}
+  article[style*="height: 640px"]{height:500px!important}
+  .ac-card>div[style*="height: 520px"],.ac-card>div[style*="height: 560px"]{height:360px!important}
+  section[style*="height: clamp(420px"],section[style*="height: clamp(380px"]{height:300px!important}
+  div[role="tablist"][aria-label="Category"]{width:100%}
+  div[role="tablist"][aria-label="Category"] button{flex:1 1 0!important;text-align:center;font-size:20px!important;padding:14px 10px!important}
+  #build div[style*="background: #0B0B0B"][style*="padding: clamp(28px"]{padding:24px!important}
+  #build div[style*="grid-template-columns: 130px"]{grid-template-columns:96px minmax(0,1fr)!important}
+  .ac-line{padding-left:6px!important;padding-right:6px!important}
+  dl[style*="grid-template-columns: repeat(2"]{grid-template-columns:1fr!important}
+  #process ol{grid-template-columns:1fr 1fr!important;gap:28px 16px!important}
+  #process ol li span[style*="clamp(30px"]{font-size:26px!important}
+}
+@media (hover:none){.ac-card:hover img{transform:none}.ac-btn:hover{transform:none}}
+</style>
+<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('details.ac-mnav a');if(a){a.closest('details').open=false}});</script>
 <style>html.dc-ready .ac-ln>span,html.dc-ready .ac-fade{animation:none}</style>
 </head>
 <body>
